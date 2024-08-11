@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import "./globals.css";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
@@ -28,6 +30,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
