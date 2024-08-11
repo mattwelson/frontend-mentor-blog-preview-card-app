@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
 
 import Illustration from "@/images/illustration-article.svg";
 import AvatarGreg from "@/images/image-avatar.webp";
@@ -45,6 +46,17 @@ export default function Home() {
           <div className="font-bold">Greg Hooper</div>
         </CardFooter>
       </Card>
+      <div className="mt-4">
+        <a
+          href="https://github.com/mattwelson/frontend-mentor-blog-preview-card-app"
+          target="_blank"
+          rel="nofollower noreferrer"
+          className="flex gap-2 items-center"
+        >
+          <FaGithub className="size-8" />
+          Github
+        </a>
+      </div>
     </main>
   );
 }
